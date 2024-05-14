@@ -17,4 +17,10 @@ class BeerSong
         "Go to the store and buy some more, 99 bottles of beer on the wall.\n"
     end
   end
+
+  def verses(beer1, beer2)
+    BeerSong.new.verse(beer1)
+    BeerSong.new.verse(beer2)
+  end
+
 end
