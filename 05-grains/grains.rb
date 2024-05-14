@@ -4,17 +4,13 @@
 class Grains
 
   def Grains.square(squares)
-    if(squares == 1)
-      return 1
-    else
-      grains = 1
+    grains = 1
+    squares = squares - 1
+    while squares >= 1
+      grains = grains * 2
       squares = squares - 1
-      while squares >= 1
-        grains = grains * 2
-        squares = squares - 1
-      end
-      return grains
     end
+    return grains
   end
 
   def self.total
