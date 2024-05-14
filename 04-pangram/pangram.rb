@@ -3,18 +3,14 @@ require 'set'
 
 class Pangram
   def self.is_pangram?(str)
-    if(str.size <= 25)
-      return false
-    end
 
     unique_characters = Set.new()
-    #remove non a-z characters from string
-    #might be unreliable if string has no a-z characters
-    str = str.gsub(/[^a-zA-Z]/, '')
 
     str.each_char { |c|
       c = c.downcase
-      unique_characters.add(c)
+      if(c >= 'a' && c <= 'z')
+        unique_characters.add(c)
+      end
     }
 
     if(unique_characters.size <= 25)
