@@ -2,7 +2,7 @@
 require 'set'
 
 class Pangram
-  def Pangram.is_pangram?(str)
+  def self.is_pangram?(str)
     if(str.size <= 25)
       return false
     end

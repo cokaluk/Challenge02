@@ -3,7 +3,7 @@
 
 class Grains
 
-  def Grains.square(squares)
+  def self.square(squares)
     grains = 1
     squares = squares - 1
     while squares >= 1

@@ -2,7 +2,7 @@
 
 class HelloWorld
 
-  def HelloWorld.hello(name = "World")
+  def self.hello(name = "World")
     return"Hello, #{name}!"
   end
 end

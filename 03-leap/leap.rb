@@ -1,7 +1,7 @@
 #Cokaluk WebDev 3011 Challenge02 leap
 
 class Year
-  def Year.leap?(year)
+  def self.leap?(year)
     leap = true
 
     if(year % 4 != 0)
